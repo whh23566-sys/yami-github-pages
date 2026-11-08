@@ -1,12 +1,16 @@
-# Yami 的个人小天地
+# leiruoxuan.com
 
-用 React 和 Vite 编写的个人网站。作品、手记和详情内容在 `src/content.js` 中维护。
+使用 React 和 Vite 的网站骨架。从 `src/App.jsx` 开始编写首页。
 
-```sh
-npm ci
-npm run dev
+在 Windows PowerShell 中启动本地预览：
+
+```powershell
+npm.cmd ci
+npm.cmd run dev
 ```
 
-`npm run build` 将网站构建到 `dist/`，`npm run preview` 用于检查构建后的页面。
+打开终端显示的本地地址，保存修改后预览会自动更新。
 
-在 GitHub 仓库的 **Settings → Pages** 将发布来源选为 **GitHub Actions**。之后推送到 `main`，工作流会构建并发布网站，也可以在 **Actions** 中手动运行。
+`npm.cmd run build` 将网站构建到 `dist/`，`npm.cmd run preview` 用于检查构建后的页面。
+
+推送到 `main` 后，GitHub Actions 会构建并发布到 GitHub Pages。可以在仓库的 **Actions** 页面查看发布进度。
